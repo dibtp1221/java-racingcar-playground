@@ -16,6 +16,9 @@ public class Car {
     public int getLocation() {
         return location;
     }
+    protected void setLocation(int location) {
+        this.location = location;
+    }
 
     public void drive() {
         if (getRand() >= STANDARD) {
@@ -25,5 +28,13 @@ public class Car {
 
     private int getRand() {
         return (int) (Math.random() * 8) + 1;
+    }
+
+    public String print() {
+        StringBuilder result = new StringBuilder(getName() + " : ");
+        for (int i=0; i<location; i++) {
+            result.append("-");
+        }
+        return result.toString();
     }
 }

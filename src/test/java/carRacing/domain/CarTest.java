@@ -21,4 +21,11 @@ public class CarTest {
         car.drive();
         assertThat(car.getLocation()).isLessThanOrEqualTo(3);
     }
+
+    @Test
+    void print() {
+        Car car = new Car("pobi");
+        car.setLocation(3);
+        assertThat(car.print()).isEqualTo("pobi : ---");
+    }
 }
