@@ -16,7 +16,8 @@ public class Car {
     public int getLocation() {
         return location;
     }
-    protected void setLocation(int location) {
+
+    public void setLocation(int location) {
         this.location = location;
     }
 
@@ -30,7 +31,7 @@ public class Car {
         return (int) (Math.random() * 8) + 1;
     }
 
-    public String print() {
+    public String getStatMsg() {
         StringBuilder result = new StringBuilder(getName() + " : ");
         for (int i=0; i<location; i++) {
             result.append("-");

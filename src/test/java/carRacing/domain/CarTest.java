@@ -26,6 +26,6 @@ public class CarTest {
     void print() {
         Car car = new Car("pobi");
         car.setLocation(3);
-        assertThat(car.print()).isEqualTo("pobi : ---");
+        assertThat(car.getStatMsg()).isEqualTo("pobi : ---");
     }
 }
