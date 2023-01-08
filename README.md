@@ -24,3 +24,12 @@ git checkout main // 기본 브랜치가 main인 경우
 git checkout -b 브랜치이름
 ex) git checkout -b apply-feedback
 ```
+
+### 자동차 경주 게임 구현 기능 목록
+- 자동차 객체 생성
+  - 전진 기능 (random 구하는 것까지 포함)
+- 경주 자동차 이름 입력받기성
+- 참가 자동차 리스트 구현
+- count 입력받기
+- 경주 기능 구현 (입력받은 count만큼 실행하면서 결과 출력)
+- 우승 자동차 구하기
