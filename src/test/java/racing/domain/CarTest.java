@@ -12,4 +12,10 @@ public class CarTest {
         car.move(movingStrategy);
         Assertions.assertThat(car.getPosition()).isEqualTo(new Position(1));
     }
+
+    @Test
+    void toStringTest() {
+        Car car = new Car("pobi", 3);
+        Assertions.assertThat(car.toString()).isEqualTo("pobi : ---");
+    }
 }

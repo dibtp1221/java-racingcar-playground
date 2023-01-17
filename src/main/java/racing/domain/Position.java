@@ -24,4 +24,13 @@ public class Position {
     public int hashCode() {
         return Objects.hash(location);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < location; i++) {
+            result.append("-");
+        }
+        return result.toString();
+    }
 }
