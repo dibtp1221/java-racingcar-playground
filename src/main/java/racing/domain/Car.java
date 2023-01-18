@@ -21,6 +21,9 @@ public class Car {
         }
     }
 
+    public Name getName() {
+        return this.name;
+    }
     public Position getPosition() {
         return this.position;
     }
