@@ -12,6 +12,10 @@ public class Position {
         return new Position(location + 1);
     }
 
+    public int compareTo(Position p) {
+        return p.location - this.location;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
